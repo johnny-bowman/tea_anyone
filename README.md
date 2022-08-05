@@ -23,7 +23,7 @@
 This app exposes three different endpoints to an imaginary Front End which allows users to create and cancel tea subscriptions, as well as return all user subscriptions
 
 ## **Schema**
-
+![plot](./docs/images/tea_anyone_schema.png)
 
 ## **Goals**
 
