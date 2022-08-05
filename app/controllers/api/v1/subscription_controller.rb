@@ -8,7 +8,6 @@ class Api::V1::SubscriptionController < ApplicationController
 
   def create
     sub = Subscription.new(subscription_attributes)
-    # binding.pry
     if sub.save
       @teas.each do |tea|
         TeaSubscription.create!(tea_id: tea.id, subscription_id: sub.id)
@@ -19,7 +18,14 @@ class Api::V1::SubscriptionController < ApplicationController
     end
   end
 
-  def destroy
+  def update
+    sub = Subscription.find(params[:id])
+    sub.update(status: 1)
+    if sub.save
+      render json: Api::V1::SubscriptionSerializer.cancel_subscription(sub), status: 200
+    else
+      database_error(sub)
+    end
   end
 
   private

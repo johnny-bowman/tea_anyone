@@ -15,25 +15,13 @@ class Api::V1::SubscriptionSerializer
       }
     end
 
-    def invalid_email
+    def cancel_subscription(sub)
       {
-        errors: [
-          {
-            status: 401,
-            message: 'invalid email'
-          }
-        ]
-      }
-    end
-
-    def invalid_tea_title
-      {
-        errors: [
-          {
-            status: 400,
-            message: "one or more of your requested tea titles don't exist - check for typos!"
-          }
-        ]
+        data: {
+          type: 'subscription',
+          id: sub.id,
+          message: "Subscription canceled."
+        }
       }
     end
   end
