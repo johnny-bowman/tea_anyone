@@ -46,6 +46,7 @@ end
 group :test do
   gem "webmock"
   gem "vcr"
+  gem 'activerecord-reset-pk-sequence'
 end
 
 group :development do
