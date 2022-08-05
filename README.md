@@ -6,20 +6,25 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
+
+## **Table of Contents**
+- [Background and Description](#background-and-description)
+- [Schema](#schema)
+- [Goals](#goals)
+- [Requirements and Setup (for Mac):](#requirements-and-setup-for-mac)
+    - [Ruby and Rails Versions](#ruby-and-rails-versions)
+    - [Gems Utilized](#gems-utilized)
+    - [SetUp](#setup)
+- [Endpoints](#endpoints-provided)
+- [Contributors](#contributors-)
+
 ## **Background and Description**
 
 This app exposes three different endpoints to an imaginary Front End which allows users to create and cancel tea subscriptions, as well as return all user subscriptions
 
-## **Table of Contents**
-- [Background and Description](#background-and-description)
-- [Learning Goals](#learning-goals)
-- [Requirements and Setup (for Mac):](#requirements-and-setup-for-mac)
-    - [Ruby and Rails Versions](#ruby-and-rails-versions)
-    - [Gems Utilized](#gems-utilized)
-    - [APIs](#apis-consumed)
-    - [SetUp](#setup)
-- [Endpoints](#endpoints-provided)
-- [Contributors](#contributors-)
+## **Schema**
+
+
 ## **Goals**
 
 - Expose an API that creates and cancels user tea subscriptions, as well as returns all subscriptions for a given user
@@ -28,7 +33,7 @@ This app exposes three different endpoints to an imaginary Front End which allow
 
 ## **Requirements and Setup (for Mac):**
 
-### **Ruby and Rails**
+### **Ruby and Rails Versions**
 - Ruby Version 2.7.4
 - Rails Version 5.2.8
 
