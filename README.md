@@ -33,20 +33,13 @@ This app exposes three different endpoints to an imaginary Front End which allow
 - Rails Version 5.2.8
 
 ### **Gems Utilized**
-- [bcryt](https://www.rubydoc.info/gems/bcrypt-ruby/3.1.5)
 - [capybara](https://github.com/teamcapybara/capybara)
-- [faraday](https://github.com/lostisland/faraday)
-- [figaro](https://github.com/laserlemon/figaro)
-- [jsonapi-serializer](https://github.com/jsonapi-serializer/jsonapi-serializer)
-- [launchy](https://github.com/copiousfreetime/launchy)
 - [pry](https://github.com/pry/pry)
 - [rspec_junit_formatter](https://github.com/sj26/rspec_junit_formatter)
 - [rspec](https://relishapp.com/rspec)
 - [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
 - [securerandom](https://github.com/ruby/securerandom)
 - [simplecov](https://github.com/simplecov-ruby/simplecov)
-- [vcr](https://github.com/vcr/vcr)
-- [webmock](https://github.com/bblimke/webmock)
 - [activerecord-reset-pk-sequence](https://github.com/splendeo/activerecord-reset-pk-sequence)
 
 ## Setup
