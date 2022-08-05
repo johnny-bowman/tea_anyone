@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :subscription
+      get 'users/:id/subscriptions', to: "user_subscription#index"
     end
   end
 end

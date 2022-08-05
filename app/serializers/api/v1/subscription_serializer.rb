@@ -24,5 +24,15 @@ class Api::V1::SubscriptionSerializer
         }
       }
     end
+
+    def subscription_index(subs)
+      {
+        data: {
+          type: 'user_subscriptions',
+          user_id: subs.first.user_id,
+          subscriptions: subs
+        }
+      }
+    end
   end
 end

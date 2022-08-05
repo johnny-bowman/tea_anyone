@@ -48,6 +48,23 @@ RSpec.describe 'Subscription request' do
 
       expect(params[:message]).to eq('Subscription canceled.')
     end
+
+    it 'returns all user subscriptions' do
+      Subscription.create!(price: 11.50, status: 0, frequency: 2, user_id: 1)
+      Subscription.create!(price: 13.50, status: 0, frequency: 4, user_id: 1)
+
+      get "/api/v1/users/1/subscriptions"
+
+      expect(response.status).to eq(200)
+      params = JSON.parse(response.body, symbolize_names: true)[:data]
+
+      expect(params[:user_id]).to eq(1)
+      expect(params[:type]).to eq('user_subscriptions')
+
+      expect(params[:subscriptions]).to be_an(Array)
+      expect(params[:subscriptions][0][:price]).to eq(11.50)
+      expect(params[:subscriptions][1][:price]).to eq(13.50)
+    end
   end
 
   describe 'sad paths' do
