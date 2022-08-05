@@ -116,15 +116,12 @@ Before using the web application you will need to setup your databases locally b
 $ rails db:{:drop,:create,:migrate,:seed}
 ```
 6. Startup and Access<br>
-Finally, in order to use the web app you will have to start the server locally and access the app through a web browser.
+Finally, in order to use the web app you will have to start the server locally.
 - Start server
 
 ```shell
 $ rails s
 ```
-
-- Open web browser and visit link
-    http://localhost:3000
 
 At this point you should be able to access the endpoints with postman.
 
